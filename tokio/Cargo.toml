@@ -1,0 +1,17 @@
+[package]
+name = "tokio-tcp-proxy"
+version = "0.1.0"
+authors = ["Toby Lawrence <tlawrence@wayfair.com>"]
+
+[profile.release]
+debug = true
+lto = true
+opt-level = 3
+
+[dependencies]
+env_logger = "0.5.10"
+futures = "^0.1"
+#tokio = { path = "../../tokio" }
+#tokio-io = { path = "../../tokio/tokio-io" }
+tokio = "^0.1"
+tokio-io = "^0.1"
